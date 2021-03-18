@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Hotels</title>
+    
+    <script src="js/xmlHotels.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="Logo">
+            <div class="menucar">
+                <div class="menu">
+                    <a class="inici" href="index.html">Inici</a>
+                    <a href="vols.html">Vols</a>
+                    <a href="hotels.html">Hotels</a>
+                    <a href="restaurants.html">Restaurants</a>
+                    <a href="excursions.html">Excurcions</a>
+                </div>
+                <div class="carrito">
+                    <a href="#" class="cart" title="Carrito" rel="nofollow"><i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="listacarito">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Desti</th>
+                                    <th>Preu</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="caro">
+                            </tbody>
+                        </table>
+                        <button id="removeall">Borra la cesta <i class="fa fa-trash"></i></button>
+                        <button id="finish">Finalitzar<i class="fa fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="user">
+                <a class="log" href="login.php">Login</a>
+                <a class="reg" href="registre.php">Registra't</a>
+                <a href="logout.php" class="log">Desconecta</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <article class="slidshow">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/001.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/002.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/003.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/004.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/005.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/006.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/007.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/Slidshow/008.jpg">
+                </div>
+                <div class="info-slideshow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam est quo ab voluptatibus nostrum perspiciatis eveniet earum saepe asperiores sapiente, itaque ad obcaecati pariatur nobis iure maiores. Explicabo, error.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam est quo ab voluptatibus nostrum perspiciatis eveniet earum saepe asperiores sapiente, itaque ad obcaecati pariatur nobis iure maiores. Explicabo, error.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam est quo ab voluptatibus nostrum perspiciatis eveniet earum saepe asperiores sapiente, itaque ad obcaecati pariatur nobis iure maiores. Explicabo, error.</p>
+                </div>
+            </div>
+        </article>
+        <article class="productes">
+            <h1>BUSCA EL TEU HOTEL!</h1>
+            <div name="prods">
+                
+            </div>
+
+            
+        </article>
+    </section>
+    <footer>
+        <div class="sobreagencia">
+            <ul>
+                <li class="titolfooter">Serveis</li>
+                <li>label</li>
+                <li>label</li>
+                <li>label</li>
+            </ul>
+            <ul>
+                <li class="titolfooter">Atenció al clients</li>
+                <li>label</li>
+                <li>label</li>
+                <li>label</li>
+            </ul>
+            <ul>
+                <li class="titolfooter">Sobre FlyingFree</li>
+                <li>label</li>
+                <li>label</li>
+                <li>label</li>
+            </ul>
+        </div>
+        <div class="aeroports">
+            <h5>AEROPORTS I TURISME</h5>
+            <img src="./img/mapafooter.jpg" alt="Mapa">
+        </div>
+        <div class="xsocials">
+            <h4>Segueix-nos</h4>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
+
+    </script>
+    <script>
+        window.addEventListener("load", llegirProds(), false);
+    
+            function llegirProds() {
+                for (i = 0; i < localStorage.length; i++) {
+                    var clau = localStorage.key(i);
+                    var dadescaro = localStorage.getItem(clau);
+                    var obj = JSON.parse(dadescaro);
+                    document.getElementById("caro").innerHTML += "<tr>" +
+                        "<td class='bordelist'>" + obj.nom + "</td>" +
+                        "<td class='bordelist'>" + obj.desti + "</td>" +
+                        "<td class='bordelist'>" + obj.preu + "€</td>" +
+                        "<td><a class='remove'><i class='fa fa-close'></i></a></td>" +
+                        "</tr>";
+                   
+    
+    
+                }
+                eliminarProd(clau);
+                eliminarTotsProds();
+    
+    
+            }
+    
+            function eliminarProd(clau) {
+                var prodcaro = document.getElementsByClassName("remove");
+                for (i = 0; i < prodcaro.length; i++) {
+                    prodcaro[i].addEventListener("click", function(e) {
+                        localStorage.removeItem(clau);
+    
+                    }, false);
+                }
+            }
+    
+            function eliminarTotsProds() {
+                var boraraTot = document.getElementById("removeall");
+                boraraTot.addEventListener("click", function(e) {
+                    localStorage.clear();
+    
+                }, false);
+            }
+            function finalitzar() {
+                var bAcabar = document.getElementById("finish");
+                bAcabar.addEventListener("click", function(e) {
+                    console.log("klk");
+    
+                }, false);
+            }
+            </script>
+</body>
+
+</html>

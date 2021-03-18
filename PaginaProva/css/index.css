@@ -1,0 +1,397 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+}
+/*Estils menu*/
+header {
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    display: inline-block;
+    width: 80%;
+    background-color: black;
+}
+
+nav img {
+    width: 10%;
+    float: left;
+    margin: 1%;
+
+}
+
+.menu {
+    padding: 1%;
+    margin: 2% 1% 1% 1%;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 1% 2%;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #202020;
+}
+
+.inici {
+    color: #fec63d;
+}
+.carrito{
+    display: flex;
+    margin: -4% 0% 0% 68%;
+}
+.cart{
+    position: relative;
+    float: right;
+}
+.fas{
+    font-size: 2em;
+    color: white;
+}
+
+#cart_menu_num {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    background: red;
+    width: 20px;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
+    font-size: 1em;
+}
+.carrito:hover .listacarito{
+    display: block;
+    
+}
+.listacarito{
+    display: none;
+    position: absolute;
+    float: right;
+    background-color: #d39c2f;
+    color: #101010;
+    min-width: 17%;
+    max-width: 45%;
+    min-height: 100px;
+    max-height: 500px;
+    margin: 32px auto 0 -180px;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+}
+.listacarito th{
+    margin: 1px;
+    padding: 5px;
+    color: white;
+    text-align: left;
+}
+.bordelist{
+    border: 2px solid black;
+}
+.fa-close{
+    color: red;
+}
+.listacarito button{
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.user {
+    float: right;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10% 1% 1% 1%;
+    margin-top: -10%;
+    margin-right: 6%;
+}
+
+.user:hover {
+    cursor: pointer;
+    background-color: #fec63d;
+}
+
+.log {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: #3f3f3f;
+    padding: 2px;
+}
+
+.reg {
+    background-color: #3f3f3f;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+/*Estils Slideshow*/
+.mySlides {
+    display: none;
+    
+}
+
+.slideshow-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.slideshow-container img {
+    width: 950px;
+    height: 540px;
+    margin-top: 10%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.info-slideshow{
+    margin-top: -18%;
+    margin-bottom: 7%;
+    z-index: 50;
+}
+.info-slideshow p{
+    display: inline-block;
+    width: 20%;
+    height: 0%;
+    font-size: 0.8em;
+    background-color: rgba(254,198,61,0.5);
+    padding: 1%;
+    
+}
+/*Estils reserves recents*/
+.reserves_recents h2{
+    background-color: #202020;
+    width: 25%;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0.5% 0;
+    border-radius: 15px; 
+    color: white;
+    margin-top: 30px;
+}
+.reservescen{
+    text-align: center;
+}
+.reservaR{
+    display: inline-block;
+    width: 17%;
+    margin: 1% 4%;
+}
+.reservaR h4{
+    background-color: white;
+    color: #3f3f3f;
+    text-align: center;
+    width: 80%;
+    margin: 1% auto;
+}
+.reservaR img{
+    width: 80%;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.reservaR p{
+    background-color: white;
+    color: #3f3f3f;
+    margin: 1% auto;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+/*Estils dels Comentaris*/
+.comentaris{
+    background-color: #707070;
+    padding: 1%;
+    width: 93%;
+    border-radius: 20px;
+}
+.coments{
+    text-align: center;
+}
+.coment{
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    margin: 1% 5%;
+    color: #202020;
+    
+}
+.coment p{
+    background-color: white;
+    padding: 2%;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+}
+.egris{
+    color: #202020;
+}
+.eblanc{
+    color: white;
+}
+.addcom{
+    text-align: center;
+}
+.addcom h3{
+    background-color: white;
+    color: #707070;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#comentari{
+    margin: 1%;
+}
+.emailboton{
+    text-align: left;
+    margin-left: 30.8%;
+}
+.addcom input{
+    width: 10%;
+}
+.botocoment{
+    background-color: #d39c2f;
+    color: white;
+}
+/*Estils de les pagines de productes*/
+
+.productes{
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    text-align: center
+}
+.productes h1{
+    color: #d39c2f;
+    font-size: 2.4em;
+}
+.productes table{
+    margin: 0 auto;
+    
+}
+.productes th{
+    background-color: #d39c2f;
+    padding: 10px;
+    
+}
+.productes td{
+    background-color: #202020;
+    padding: 10px;
+}
+.add{
+    background-color: black !important;
+}
+.fa-plus{
+    color: lime;
+    
+}
+/*Estils del footer*/
+.sobreagencia{
+    color: #d39c2f;
+    margin-top: 5%;
+}
+.sobreagencia ul{
+     list-style: none;
+    display: inline-block;
+}
+.sobreagencia li{
+    margin: 5%;
+}
+.titolfooter{
+    background-color: white;
+    color: #707071;
+    width: 130px;
+    border-radius: 5px;
+}
+.aeroports{
+    color: #202020;
+    background-color: white;
+    border-radius: 5px;
+    width: 20%;
+    padding: 1%;
+    margin: -9% 0 0 73%;
+}
+.aeroports img{
+    width: 60%;
+}
+.xsocials{
+    text-align: center;
+}
+.xsocials h4{
+    background-color: white;
+    color: #707071;
+    width: 130px;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+/*Estils dels iconos*/
+.fa {
+    padding: 1%;
+    font-size: 1.8em;
+    width: 5%;
+    text-align: center;
+    text-decoration: none;
+    margin: 1%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

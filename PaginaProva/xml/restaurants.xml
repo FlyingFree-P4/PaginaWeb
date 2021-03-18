@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurants SYSTEM "restaurants.dtd">
+
+<restaurants>
+
+<restaurant id="restaurant1">
+
+<nom>Tagliatella</nom>
+<desti>Madrid</desti>
+<imatge>#</imatge>
+<descripcio>Autentics sabors italians</descripcio>
+<persones>4</persones>
+<dia>15/10/2021</dia>
+<hora>11:00</hora>
+<preu>13</preu>
+
+</restaurant>
+
+
+
+<restaurant id="restaurant2">
+
+<nom>depans</nom>
+<desti>Barcelona</desti>
+<imatge>#</imatge>
+<descripcio>Els millor bocadillos</descripcio>
+<persones>6</persones>
+<dia>12/11/2021</dia>
+<hora>13:00</hora>
+<preu>9€</preu>
+
+</restaurant>
+
+
+<restaurant id="restaurant3">
+
+<nom>McDonalds</nom>
+<desti>Manchester,Regne Unit</desti>
+<imatge>#</imatge>
+<descripcio>Menjar rapid, hamburgueses i derivats a bon preu.</descripcio>
+<persones>8</persones>
+<dia>02/01/2021</dia>
+<hora>11:30</hora>
+<preu>12</preu>
+
+</restaurant>
+
+
+<restaurant id="restaurant4">
+
+<nom>Mirasur</nom>
+<desti>Menton,Francia</desti>
+<imatge>#</imatge>
+<descripcio>receptes en les que juga amb "les textures, el contrast de sabors i les associacions audaçes.</descripcio>
+<persones>2</persones>
+<dia>10/01/2021</dia>
+<hora>22:00</hora>
+<preu>110</preu>
+
+</restaurant>
+
+
+
+</restaurants>
