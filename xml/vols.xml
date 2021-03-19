@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE viatges SYSTEM "vols.dtd">
+<viatges>
+  <vols id="vol1">
+    <nom>Ryanair</nom>
+    <desti>Manchester, Regne Unit</desti>
+    <imatge>##</imatge>
+    <descripcio>(¡¡Atenció COVID-19!!) Vol a Manchester amb Ryanair amb menú inclós. Menú: 1r Plat-> Sopa de verdures 2n Plat-> Entrecot amb patates Postre-> A gust</descripcio>
+    <persones>2</persones>
+    <dia>15/10/2021</dia>
+    <hora>13:00</hora>
+    <preu>32</preu>
+  </vols>
+
+ <vols id="vol2">
+    <nom>Emirates</nom>
+    <desti>Dubai, Emirats Àrabs Units</desti>
+    <imatge>##</imatge>
+    <descripcio>(¡¡Atenció COVID-19!!) Vol a dubai amb Emirates amb totes les opcions de first class: llit, menú, entreteniment...</descripcio>
+    <persones>1</persones>
+    <dia>13/11/2021</dia>
+    <hora>08:05</hora>
+    <preu>278</preu>
+  </vols>
+  
+  
+   <vols id="vol3">
+    <nom>Wizz Air</nom>
+    <desti>Viena, Austria</desti>
+    <imatge>##</imatge>
+    <descripcio>(¡¡Atenció COVID-19!!) Vol a Austria amb Wizz Air</descripcio>
+    <persones>3</persones>
+    <dia>22/08/2021</dia>
+    <hora>23:00</hora>
+    <preu>54</preu>
+  </vols>
+  
+  <vols id="vol4">
+    <nom>Lufthansa</nom>
+    <desti>Austin, Texas</desti>
+    <imatge>##</imatge>
+    <descripcio>(¡¡Atenció COVID-19!!) Vol a Austin, Texas amb Lufthasa, la compañia de vols llargs més segura amb que ofereixen la millor comodació</descripcio>
+    <persones>4</persones>
+    <dia>04/07/2021</dia>
+    <hora>04:00</hora>
+    <preu>137</preu>
+  </vols>
+  
+  <vols id="vol5">
+    <nom>1.Lufthansa 2.United</nom>
+    <desti>Sidney, Australia</desti>
+    <imatge>##</imatge>
+    <descripcio>(¡¡Atenció COVID-19!!) Vol a Sidney en escala amb Lufthansa i United amb la millor comoditat i ofereixen vals de descompte als restaurants i bars dels aeroports on es fa el canvi de avions.</descripcio>
+    <persones>2</persones>
+    <dia>10/01/2021</dia>
+    <hora>12:25</hora>
+    <preu>1037</preu>
+  </vols>
+</viatges>

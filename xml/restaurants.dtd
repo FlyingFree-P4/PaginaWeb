@@ -1,0 +1,13 @@
+<!ELEMENT restaurants (restaurant*)>
+<!ELEMENT restaurant (nom,desti,imatge,descripcio,persones,dia,hora,preu)>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT desti (#PCDATA)>
+<!ELEMENT imatge (#PCDATA)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT persones (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+
+<!ATTLIST restaurant id ID #REQUIRED>
