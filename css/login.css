@@ -1,0 +1,96 @@
+*{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+header img{
+    width: 36.5%;
+    margin: 2%
+}
+.inici{
+    text-decoration: none;
+    color: #d39c2f;
+    font-size: 1.3em;
+}
+.inici img{
+    width: 36px;
+}
+.menu{
+    text-decoration: none;
+    padding: 1% 6%;
+    background-color: #202020;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 80%;
+}
+form{
+    margin: 2% auto;
+    padding: 1%;
+    width: 50%; 
+}
+label{
+    margin: 1% 2% 3% 4%;
+    padding: 1%;
+    font-weight: bold;
+}
+input{
+    margin: 1%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 30%;
+    padding-top: 1% 2%;
+}
+#entrar{
+    background-color: #707070;
+    color: white;
+    padding: 0.3% 4%;
+    float: left;
+    margin-left: 34.2%;
+    width: 15%;
+    margin-top: 3%;
+}
+.registre{
+    display: inline-block;
+    margin-right: 33%;
+    font-size: 0.7em
+}
+.registre a{
+    color: #d39c2f;
+    text-decoration: none;
+}
+/*Estils dels iconos*/
+.fa{
+    padding: 1%;
+    font-size: 1.8em;
+    width: 5%;
+    text-align: center;
+    text-decoration: none;
+    margin: 1%;
+    
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
