@@ -505,3 +505,204 @@ nav img {
     background: #125688;
     color: white;
 }
+/*Estils per a pantalles mes petites de 768 pixels*/
+
+@media only screen and (max-width: 768px) {
+   * {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+}
+
+nav img {
+    width: 10%;
+    float: left;
+    margin: 1%;
+
+}
+.mySlides {
+    display: none;
+
+}
+
+.slideshow-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: -5%;
+}
+
+.slideshow-container img {
+    width: 670px;
+    height: 470px;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.menu {
+    padding: 1%;
+    margin: 2% 1% 1% 1%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 1% 2%;
+    color: white;
+    width: 2px;
+}
+
+.menu a:hover {
+    background-color: #202020;
+}
+
+.inici {
+    color: #fec63d;
+}
+
+.carrito {
+    display: flex;
+    margin: -4% 0% 0% 68%;
+    margin-top: 2%;
+}
+
+.cart {
+    position: relative;
+    float: right;
+}
+
+.fas {
+    font-size: 2em;
+    color: white;
+}
+
+#cart_menu_num {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    background: red;
+    width: 20px;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
+    font-size: 1em;
+}
+
+.carrito:hover .listacarito {
+    display: block;
+
+}
+
+.listacarito {
+    display: none;
+    position: absolute;
+    float: right;
+    background-color: #d39c2f;
+    color: #101010;
+    min-width: 20%;
+    max-width: 45%;
+    min-height: 100px;
+    max-height: 500px;
+    margin: 32px auto 0 -180px;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.listacarito th {
+    margin: 1px;
+    padding: 5px;
+    color: white;
+    text-align: left;
+}
+
+.bordelist {
+    border: 2px solid black;
+}
+
+.fa-close {
+    color: red;
+}
+
+.listacarito button {
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.user {
+    float: right;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5% -2% -2% -2%;
+    margin-top: -15%;
+    margin-right: -15px;
+}
+
+.user:hover {
+    cursor: pointer;
+    background-color: #fec63d;
+}
+
+.log {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: #3f3f3f;
+    padding: 1px;
+}
+
+.reg {
+    background-color: #3f3f3f;
+    text-decoration: none;
+    color: white;
+    padding: 1px;
+}
+
+.info-slideshow {
+    margin-top: -30%;
+    margin-bottom: 7%;
+    z-index: 50;
+}
+
+.info-slideshow p {
+    display: inline-table;
+    width: 250px;
+    height: 100px;
+    font-size: 0.8em;
+    background-color: rgba(254, 198, 61, 0.5);
+    padding: 1%;
+
+}
+
+.reserves_recents h2 {
+    background-color: #202020;
+    width: 25%;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0.5% 0;
+    border-radius: 15px;
+    color: white;
+    margin-top: -15px;
+}
+}
